@@ -52,9 +52,8 @@ Click the button below to deploy the connector to Heroku:
 
 In the 'Config Vars' section, add the following:
 * **WEBHOOK_FOR_TELEGRAM:** The url of this heroku app - `https:/[your heroku app name].herokuapp.com`
-* **TELEGRAM_TOKEN:** The token for your bot.`
+* **TELEGRAM_TOKEN:** The token for your bot.
 * **TENEO_ENGINE_URL:** The engine url
 
 
-Next, follow the Telegram Setup instructions above. Make sure that in the step 8 you set the Webhook URL to the url of the Heroku app.
-
+Next, follow the Telegram Setup instructions above. 
