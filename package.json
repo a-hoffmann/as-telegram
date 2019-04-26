@@ -2,10 +2,10 @@
   "name": "telegram",
   "version": "0.0.1",
   "description": "a telegram channel",
-  "main": "server.js",
+  "main": "telegram_tie.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node telegram_tie.js"
   },
   "author": "Alexander Hoffmann",
   "license": "ISC",
