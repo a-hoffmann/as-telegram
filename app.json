@@ -1,0 +1,28 @@
+{
+    "name": "telegram-channel-teneo",
+    "description": "A Teneo bot connector for Telegram.",
+    "keywords": [
+        "bot",
+        "Telegram",
+        "Teneo"
+    ],
+    "repository": "https://github.com/a-hoffmann/as-telegram",
+    "env": {
+        "WEBHOOK_FOR_TELEGRAM": {
+            "description": "Webhook for Telegram i.e. the server it will send messages to i.e. external address for server this application runs on. https://[yourappname].herokuapp.com",
+            "required":true
+        },
+        "PORT": {
+            "description": "Port this runs on.  Defaults to 1337",
+            "required":false
+        },        
+        "TENEO_ENGINE_URL": {
+            "description": "Please input your Teneo Engine URL. https://some.engine/instance/",
+            "required":true
+        }, 
+        "TELEGRAM_TOKEN": {
+            "description": "Enter the token you recieved when creating you bot with the Botfather.",
+            "required":true
+        }
+    }
+}
