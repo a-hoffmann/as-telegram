@@ -48,7 +48,7 @@ Open a chat by searching for the bot name you defined earlier, and speak to your
 
 Click the button below to deploy the connector to Heroku:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg?classes=noborder)](https://heroku.com/deploy?template=https://github.com )
+[![Deploy](https://www.herokucdn.com/deploy/button.svg?classes=noborder)](https://heroku.com/deploy?template=https://github.com/a-hoffmann/as-telegram)
 
 In the 'Config Vars' section, add the following:
 * **WEBHOOK_FOR_TELEGRAM:** The url of this heroku app - `https:/[your heroku app name].herokuapp.com`
