@@ -17,7 +17,7 @@ Only a few are supported in Telegram.
 ## Running the connector locally
 ### Telegram Setup
 
-To register a bot in Telegram, you are required to talk to the [t.me/BotFather](Botfather), which is itself a bot. 
+To register a bot in Telegram, you must first talk to the [t.me/BotFather](Botfather), which is itself a bot. 
 
 1. In Telegram, start a chat with the Botfather.
 2. Send the command /newbot from the list of options to start the process.
@@ -36,7 +36,7 @@ To register a bot in Telegram, you are required to talk to the [t.me/BotFather](
     ```
     npm install
     ``` 
-3. Start the connector with the following command (replacing the environment variables with the appropriate values):
+3. Start the connector with the following command (replacing the environment variables with your own values):
     ```
     WEBHOOK_FOR_TELEGRAM=<a_public_webhook_URL> TELEGRAM_TOKEN=<your_telegram_token> TENEO_ENGINE_URL=<your_engine_url> node server.js
     ```

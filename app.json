@@ -13,7 +13,7 @@
             "required":true
         },
         "PORT": {
-            "description": "Port this runs on.  Defaults to 1337",
+            "description": "Port this runs on.  Defaults to 8443",
             "required":false
         },        
         "TENEO_ENGINE_URL": {
@@ -21,7 +21,7 @@
             "required":true
         }, 
         "TELEGRAM_TOKEN": {
-            "description": "Enter the token you recieved when creating you bot with the Botfather.",
+            "description": "Enter the token you recieved when creating your bot in the app using the Botfather.",
             "required":true
         }
     }
