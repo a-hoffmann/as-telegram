@@ -6,14 +6,15 @@ This node.js example connector allows you to make your Teneo bot available on Te
 ### Https
 The Telegram Bot API requires the connector to be available via https. Ngrok is recommended for this.
 
-1. Make sure your connector is available via https. When running locally you can for example use [ngrok](https://ngrok.com) for this. Run the connector on port 8443 by default. 
+1. Make sure your connector is available via https. When running locally you can for example use [ngrok](https://ngrok.com) for this.
+ Run the connector on port 8443 by default. 
     ```
     ngrok http 8443
     ```
 2. Running the command above will display a public https URL, copy it, we will use it as a `Webhook URL` for the following steps.
 
 
-## Running the connector locally
+
 ### Telegram Setup
 
 To register a bot in Telegram, you must first talk to the [t.me/BotFather](Botfather), which is itself a bot. 
@@ -26,7 +27,7 @@ To register a bot in Telegram, you must first talk to the [t.me/BotFather](Botfa
 4. Save the token generated in the chat. You will need it later.
 5. Paste it into the config variables.
 
-
+## Running the connector locally
 ### Connector Setup Instructions
 
 1. Download or clone the connector source code:
@@ -37,7 +38,7 @@ To register a bot in Telegram, you must first talk to the [t.me/BotFather](Botfa
     ```
     npm install
     ``` 
-3. Start the connector with the following command (replacing the environment variables with your own values, alternatively you can create a .env file):
+3. Start the connector with the following command (replacing the environment variables with your own values, alternatively you can create a `.env` file):
     ```
     WEBHOOK_FOR_TELEGRAM=<a_public_webhook_URL> TELEGRAM_TOKEN=<your_telegram_token> TENEO_ENGINE_URL=<your_engine_url> node server.js
     ```
