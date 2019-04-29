@@ -38,17 +38,17 @@ To register a bot in Telegram, you must first talk to the [t.me/BotFather](Botfa
     ```
     npm install
     ``` 
-3. Start the connector with the following command (replacing the environment variables with your own values, alternatively you can create a `.env` file):
+3. Start the connector with the following command (replacing the environment variables with your own values, alternatively you can create a `.env` file to store these):
     ```
     WEBHOOK_FOR_TELEGRAM=<a_public_webhook_URL> TELEGRAM_TOKEN=<your_telegram_token> TENEO_ENGINE_URL=<your_engine_url> node server.js
     ```
 
-Open a chat by searching for the bot name you defined earlier, and speak to your bot!
+Open a chat by searching for the bot name you defined earlier, and start talking to your bot!
 
 
 ## Running the connector on Heroku
 
-Click the button below to deploy the connector to Heroku:
+Once you have registered your bot and copied the token, click the button below to deploy the connector to Heroku:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg?classes=noborder)](https://heroku.com/deploy?template=https://github.com/a-hoffmann/as-telegram)
 
@@ -57,5 +57,3 @@ In the 'Config Vars' section, add the following:
 * **TELEGRAM_TOKEN:** The token for your bot.
 * **TENEO_ENGINE_URL:** The engine url
 
-
-Next, follow the Telegram Setup instructions above. 
