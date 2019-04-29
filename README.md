@@ -4,7 +4,7 @@ This node.js example connector allows you to make your Teneo bot available on Te
 
 ## Prerequisites
 ### Https
-The Telegram Bot API requires that the connector is available via https. Ngrok is recommended for this.
+The Telegram Bot API requires the connector to be available via https. Ngrok is recommended for this.
 
 1. Make sure your connector is available via https. When running locally you can for example use [ngrok](https://ngrok.com) for this. Run the connector on port 8443 by default. 
 Only a few are supported in Telegram.
@@ -18,6 +18,8 @@ Only a few are supported in Telegram.
 ### Telegram Setup
 
 To register a bot in Telegram, you must first talk to the [t.me/BotFather](Botfather), which is itself a bot. 
+
+![](img/Botfather.jpg "Chat with botfather")
 
 1. In Telegram, start a chat with the Botfather.
 2. Send the command /newbot from the list of options to start the process.
