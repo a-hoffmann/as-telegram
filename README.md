@@ -19,7 +19,7 @@ Only a few are supported in Telegram.
 
 To register a bot in Telegram, you must first talk to the [t.me/BotFather](Botfather), which is itself a bot. 
 
-<img src="img/Botfather.JPG" alt="Chat with botfather" align="center" height="300">
+<img src="img/Botfather.JPG" alt="Chat with botfather" align="center" height="400" style="display: block;margin: 0 auto;">
 
 1. In Telegram, start a chat with the Botfather.
 2. Send the command /newbot from the list of options to start the process.
