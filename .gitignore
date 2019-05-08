@@ -3,3 +3,4 @@ node_modules/
 .env
 LICENSE
 server.js
+telegram_tie.js

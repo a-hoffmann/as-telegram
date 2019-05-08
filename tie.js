@@ -98,6 +98,8 @@ function createTelegramMessage(teneoResponse) {
 
   // populate base message
   message.text = teneoResponse.output.text;
+  
+  message.options = {};
 
   // check for attachment TODO
   if (teneoResponse.output.parameters.telegram) {
@@ -113,7 +115,8 @@ function createTelegramMessage(teneoResponse) {
 // send the response back
 function sendTelegramMessage(userId, messageData) {
 	//expects of the old form (msg.chat.id, engineResponse.answer)
-  bot.sendMessage(userId, messageData.text)
+	
+  bot.sendMessage(userId, messageData.text, messageData.options)
     .catch(console.error);
 }
 
