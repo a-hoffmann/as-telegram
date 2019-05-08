@@ -98,9 +98,11 @@ function createTelegramMessage(teneoResponse) {
 
   // populate base message
   message.text = teneoResponse.output.text;
-  
   message.options = {};
-
+  
+  if (teneoResponse.output.parameters) {
+  message.options = JSON.parse(teneoResponse.output.parameters.ReplyKeyboardMarkup);
+  }
   // check for attachment TODO
   if (teneoResponse.output.parameters.telegram) {
     try {
