@@ -100,12 +100,11 @@ function createTelegramMessage(teneoResponse) {
   message.text = teneoResponse.output.text;
   message.options = {};
   
-  console.log(teneoResponse.output.parameters);
-  
   if (teneoResponse.output.parameters) {
-  message.options = JSON.parse(teneoResponse.output.parameters.ReplyKeyboardMarkup);
+	  console.log("there is a parameter");
+  message.options = {"reply_markup": JSON.stringify(teneoResponse.output.parameters.ReplyKeyboardMarkup)};
   }
-  // check for attachment TODO
+  // check for attachment
   if (teneoResponse.output.parameters.telegram) {
     try {
       message.attachments = [JSON.parse(teneoResponse.output.parameters.telegram)];
