@@ -100,6 +100,8 @@ function createTelegramMessage(teneoResponse) {
   message.text = teneoResponse.output.text;
   message.options = {};
   
+  console.log(teneoResponse.output.parameters);
+  
   if (teneoResponse.output.parameters) {
   message.options = JSON.parse(teneoResponse.output.parameters.ReplyKeyboardMarkup);
   }
