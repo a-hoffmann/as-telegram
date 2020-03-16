@@ -61,6 +61,7 @@ bot.on('message', (msg) => {
 async function handleTelegramMessage(sessionHandler, message) {
 
   try {
+	  console.log(`entire message ${message}`);
     console.log(`Got message '${message.text}' from chat ID ${message.chat.id}`);
 
     // find engine session id mapped to chat id
