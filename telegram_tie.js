@@ -117,8 +117,8 @@ function createTelegramMessage(teneoResponse) {
 
 // send the response back
 function sendTelegramMessage(userId, messageData) {
-	console.log("sending telegram msg to ",userId);
-	console.log("messageData is ",messageData);
+	/*console.log("sending telegram msg to ",userId);
+	console.log("messageData is ",messageData);*/
 	//expects of the old form (msg.chat.id, engineResponse.answer)
   bot.sendMessage(userId, messageData.text, messageData.attachments)
     .catch(console.error);
