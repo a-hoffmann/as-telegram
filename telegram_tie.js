@@ -107,7 +107,7 @@ function createTelegramMessage(teneoResponse) {
            'keyboard': [["Yes"],["No"],["Maybe"]]
 	  }};*/
     try {
-      message.attachments = [JSON.parse(teneoResponse.output.parameters.telegram)];
+      message.attachments = JSON.parse(teneoResponse.output.parameters.telegram);
     } catch (error_attach) {
       console.error(`Failed when parsing attachment JSON`, error_attach);
     }
