@@ -99,9 +99,10 @@ function createTelegramMessage(teneoResponse) {
 
   // populate base message
   message.text = teneoResponse.output.text;
-
+  message.reply_markup = null;
   // check for attachment TODO
   if (teneoResponse.output.parameters.telegram) {
+	  message.reply_markup = [["Yes"],["No"],["Maybe"]];
     try {
       message.attachments = [JSON.parse(teneoResponse.output.parameters.telegram)];
     } catch (error_attach) {
@@ -114,7 +115,7 @@ function createTelegramMessage(teneoResponse) {
 // send the response back
 function sendTelegramMessage(userId, messageData) {
 	//expects of the old form (msg.chat.id, engineResponse.answer)
-  bot.sendMessage(userId, messageData.text)
+  bot.sendMessage(userId, messageData.text,messageData.reply_markup)
     .catch(console.error);
 }
 
